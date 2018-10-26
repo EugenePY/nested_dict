@@ -23,6 +23,6 @@ for k, v in nested_dict.iter_flatten_nested_item():
     ('2', '5') 1
 
 with open("./test.pkl", "wb") as f:
-  loaded_nested_dict = pkl.load(f)
+  pkl.dump(nested_dict,f)
     
 ```
